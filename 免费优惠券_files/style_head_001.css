@@ -1,0 +1,661 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: none;
+	font-weight: 400;
+}
+body 
+{
+	font-size: 12px;
+	background-color: #F2F2F2;
+	font-family: 'Microsoft YaHei', 'Î¢ÈíÑÅºÚ', Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+}
+.body_head{
+	background-color: #FFFFFF;
+	padding-top: 8px;
+	padding-bottom: 5px;
+}
+.body_div{
+	width: 1190px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+a:link {
+    color: #666666;
+    text-align: left;
+    text-decoration: none;
+    TEXT-DECORATION:none;
+}
+a:visited {
+    color: #666666;
+    text-align: left;
+    text-decoration: none;
+    TEXT-DECORATION:none;
+}
+a:hover {
+    color: #FF5500;
+    text-decoration: none;
+    TEXT-DECORATION:none;
+}
+a:active {
+    color: #FF5500;
+    text-decoration: none;
+}
+img{border: 0px}
+li{list-style: none;}
+.player_001{}
+.player_001 ol{
+	position:relative;
+	width: 80px;
+	height: 20px;
+	top:-30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.player_001 ol li{
+	float:left;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius:5px;
+	background-color: #B7B7B7;
+}
+.player_001 ol li.seleted{
+	background-color: #FF4400;
+}
+.logo_001{
+	float: left;
+	height: 75px;
+	width: 324px;
+	background-repeat: no-repeat;
+	margin-right: 3px;
+}
+.Keyword_div{
+	margin: auto;
+}
+.Search_input{
+	width:366px;
+	height:36px;
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-top-left-radius:4px;
+	-moz-border-bottom-left-radius: 4px; 
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	font-size: 14px;
+	border: 2px solid #FF5500;
+	margin-left: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 20px;
+	float: left;
+}
+.Search_div{
+	-webkit-border-top-Right-radius:4px;
+	-webkit-border-bottom-Right-radius:4px;
+	-moz-border-top-Right-radius:4px;
+	-moz-border-bottom-Right-radius: 4px;
+	border-top-Right-radius:4px;
+	border-bottom-Right-radius:4px;
+	width: 86px;
+	color: #FFFFFF;
+	text-align: center;
+	border: 2px solid #FF5500;
+	height: 30px;
+	background-color: #FF5500;
+	padding-top: 6px;
+	padding-left: 6px;
+	font-size: 14px;
+	float: left;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+.Search_div:hover{
+	-webkit-border-top-Right-radius:4px;
+	-webkit-border-bottom-Right-radius:4px;
+	-moz-border-top-Right-radius:4px;
+	-moz-border-bottom-Right-radius: 4px;
+	border-top-Right-radius:4px;
+	border-bottom-Right-radius:4px;
+	width: 86px;
+	color: #FFFFFF;
+	text-align: center;
+	border: 2px solid #E65C17;
+	height: 30px;
+	background-color: #E65C17;
+	padding-top: 6px;
+	padding-left: 6px;
+	font-size: 14px;
+	cursor:pointer;
+	margin-top: 20px;
+	float: left;
+}
+.Fill_001{
+	height: 3px;
+	background-color: #FF4400;
+}
+.jiaqun_div{
+	color: #999999;
+	float: left;
+	height: 12px;
+	margin-top: 32px;
+}
+.Ad_div_001{
+	margin-left: 180px;
+	height: 300px;
+	width: 760px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	float: left;
+	padding-right: 10px;
+}
+.Float_001{
+	position:absolute;
+	width: 166px;
+	height: 299px;
+	background-image: url(http://alniu.cc/m/img/spike_001.png);
+	background-repeat: repeat-x;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #DD2C00;
+	border-bottom-color: #DD2C00;
+	border-left-color: #DD2C00;
+}
+.Float_001_2{
+	background-color: #FFFFFF;
+	overflow: hidden;
+	width: 166px;
+	position:fixed;
+	Top :0;
+	height: 299px;
+}
+.Category_000{
+	height: 34px;
+	color: #FFFFFF;
+	background-color: #D32602;
+	margin-top: 6px;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 7px;
+}
+.Category_001{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_001:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Category_002{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px -26px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_002:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Category_003{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px -66px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_003:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Category_004{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px -106px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_004:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Category_005{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px -146px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_005:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Category_006{
+	height: 31px;
+	color: #333333;
+	font-size: 14px;
+	padding-left: 47px;
+	padding-top: 10px;
+	background-image: url(//alniu.cc/m/img/spike_015.png);
+	background-repeat: no-repeat;
+	background-position: 18px -186px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D6D6D6;
+	background-color: #FFFFFF;
+}
+.Category_006:hover{
+	background-image: url(//alniu.cc/m/img/spike_016.png);
+}
+.Ad_div_002{
+	float: left;
+	width: 240px;
+	height: 300px;
+}
+.Label_001{
+	height: 46px;
+	width: 1130px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(http://alniu.cc/m/img/Fill_001.png);
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-top-width: 2px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FF4400;
+	border-right-color: #D9D9D9;
+	border-bottom-color: #D9D9D9;
+	border-left-color: #D9D9D9;
+	font-size: 16px;
+	color: #666666;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.Label_002{
+	float: left;
+	margin-top: 11px;
+}
+
+.Ad_div_002_2{
+	background-image: url(http://img.alicdn.com/tps/TB18UAZIXXXXXc.XFXXXXXXXXXX.png);
+	background-repeat: no-repeat;
+	height: 43px;
+	background-color: #E63140;
+	background-position: 85px 7px;
+}
+.Ad_div_002_2_1{
+	background-color: #E63140;
+	height: 8px;
+	margin-top: 3px;
+}
+.Ad_div_002_2_2{
+	background-color: #E63140;
+	height: 8px;
+}
+.Ad_div_002_3{
+	background-image: url(http://img.alicdn.com/tps/TB18UAZIXXXXXc.XFXXXXXXXXXX.png);
+	background-repeat: no-repeat;
+	background-position:0 -33px;
+	height: 35px;
+	width: 29px;
+	margin-left: 47px;
+}
+.Ad_div_002_4{
+	background-color: #2E3A47;
+	color: #888888;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.Ad_div_002_5{
+	background-color: #2E3A47;
+	color: #FFFFFF;
+	height: 30px;
+	width: 122px;
+	padding-right: 59px;
+	padding-left: 59px;
+	font-family: arial;
+	font-size: 20px;
+	padding-top: 2px;
+}
+.Ad_div_002_6{
+	background-image: url(http://alniu.cc/m/img/spike_003.png);
+	height: 22px;
+	width: 17px;
+	float: left;
+	background-repeat: no-repeat;
+	padding-left: 2px;
+}
+.Ad_div_002_7{
+	background-image: url(http://alniu.cc/m/img/spike_003.png);
+	height: 22px;
+	width: 6px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: -19px 0px;
+}
+.Ad_div_002_8{
+	background-image: url(http://alniu.cc/m/img/spike_003.png);
+	height: 22px;
+	width: 13px;
+	float: left;
+	background-repeat: no-repeat;
+	padding-left: 2px;
+}
+.Ad_div_002_9{
+	height: 100px;
+	width: 240px;
+	background-image: url(http://alniu.cc/m/img/ju_002.png);
+	margin-top: 3px;
+}
+.Ad_div_002_10{
+	height: 60px;
+	background-image: url(http://alniu.cc/m/img/spike_004.png);
+	background-repeat: no-repeat;
+	margin-top: 3px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #D9D9D9;
+	padding-top: 17px;
+	padding-left: 53px;
+}
+.page_lower_002{
+	background-image: url(http://alniu.cc/m/img/y_3.png);
+	height: 36px;
+	width: 36px;
+	background-repeat: no-repeat;
+	background-position: 14px 13px;
+	float: right;
+	margin-top: 5px;
+}
+.page_003{
+	margin-right: 6px;
+	margin-left: 6px;
+	float: right;
+	margin-top: 12px;
+}
+.page_lower_002:hover{
+	background-image: url(http://alniu.cc/m/img/y_4.png);
+	background-color: #E3E3E7;
+}
+.page_Up_002{
+	background-image: url(http://alniu.cc/m/img/y_1.png);
+	height: 36px;
+	width: 36px;
+	background-repeat: no-repeat;
+	background-position: 14px 13px;
+	float: right;
+	margin-top: 5px;
+}
+.page_Up_002:hover{
+	background-image: url(http://alniu.cc/m/img/y_2.png);
+	background-color: #E3E3E7;
+}
+.Load_div{
+	width: 1190px;
+	margin-top: 77px;
+	margin-right: auto;
+	margin-bottom: 400px;
+	margin-left: auto;
+	text-align: center;
+	background-image: url(http://alniu.cc/m//img/1BaxfIFEuF.gif);
+	height: 13px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.word_No{
+	background-image: url(http://img.alicdn.com/tps/TB1dx.UMpXXXXboXVXXXXXXXXXX-102-100.png);
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	width: 300px;
+	height: 100px;
+	margin-top: 50px;
+	padding-top: 100px;
+	font-size: 16px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.word_No_2 {
+	color: #777777;
+	margin-top: 5px;
+	font-size: 14px;
+	text-align: center;
+}
+.Float_002 {
+	transition:.2s;
+	overflow: hidden;
+	width: 100%;
+	height: 0px;
+	position:fixed;
+	Top :0;
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFFFFF;
+/*	-webkit-box-shadow: 1px 1px 10px #CCCCCC;
+	-moz-box-shadow: 1px 1px 10px #CCCCCC;
+	box-shadow:1px 1px 10px #CCCCCC;*/
+}
+#Float_003 {
+	width: 1200px;
+	margin: auto;
+	height: 54px;
+}
+.Fill_002 {
+	width: 5px;
+	float: left;
+	height: 54px;
+}
+.Float_004 {
+	float: left;
+	height: 35px;
+	width: 168px;
+	border-top-width: 2px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FF6600;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	padding-top: 11px;
+	background-image: url(//alniu.cc/m/img/spike_017.png);
+	background-repeat: no-repeat;
+	background-position: 10px 15px;
+	color: #989898;
+	padding-left: 30px;
+}
+.Float_004:hover {
+	background-position: 10px -19px;
+}
+.Float_005{
+	float: left;
+	background-color: #FDFDFD;
+	height: 48px;
+	width: 990px;
+	border-bottom-color: #E5E5E5;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-size: 16px;
+	color: #666666;
+}
+.Search_input_2{
+	width:300px;
+	height:28px;
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-top-left-radius:4px;
+	-moz-border-bottom-left-radius: 4px; 
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	font-size: 14px;
+	border: 1px solid #FF5500;
+	margin-left: 100px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 9px;
+	float: left;
+}
+.Search_div_2{
+	-webkit-border-top-Right-radius:4px;
+	-webkit-border-bottom-Right-radius:4px;
+	-moz-border-top-Right-radius:4px;
+	-moz-border-bottom-Right-radius: 4px;
+	border-top-Right-radius:4px;
+	border-bottom-Right-radius:4px;
+	width: 66px;
+	text-align: center;
+	height: 26px;
+	background-color: #FF5500;
+	padding-top: 4px;
+	font-size: 14px;
+	float: left;
+	margin-top: 9px;
+	margin-right: 83px;
+	color: #FFFFFF;
+}
+.jiaqun_div_2{
+	color: #999999;
+	float: left;
+	height: 12px;
+	margin-top: 15px;
+	font-size: 12px;
+}
+.spike18{
+	background-image: url(//alniu.cc/m/img/spike_018.png);
+	height: 53px;
+	width: 5px;
+	float: right;
+	background-repeat: no-repeat;
+	
+}
+#s11_1{
+	width: 1190px;
+	margin-top: 9px;
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+	display: none;
+}
+#s11_2{
+	display: none;
+}
+#pingbichuang{
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	overflow: hidden;
+	width: 100%;
+	position:fixed;
+	Top :0px;
+	background-color: #000000;
+	height: 1000px;
+	display: none;
+}
+#tc_1212{
+	Top :0px;
+	left :0px;
+	width: 330px;
+	height: 426px;
+	position:fixed;
+	display : none;
+	background-size:330px 426px;
+	background-image: url(https://gw.alicdn.com/tps/TB1ebihOpXXXXX2apXXXXXXXXXX-563-727.png);
+}
+#tc_1212_x{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-top: 8px;
+	margin-left: 284px;
+	background-size:34px 34px;
+	background-repeat: no-repeat;
+	background-image: url(https://gw.alicdn.com/tps/TB1b_MkNFXXXXXqaFXXXXXXXXXX-50-50.png);
+}
+#tc_1212_text-001{
+	height: 64px;
+	width: 152px;
+	margin-top: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size:152px 64px;
+	background-image: url(https://gw.alicdn.com/tps/TB1HXyEOpXXXXa.XFXXXXXXXXXX-252-106.png);
+}
+#tc_1212_text-002{
+	color: #FFFFFF;
+	font-size: 26px;
+	margin-top: 49px;
+	text-align: center;
+	font-family: 'Microsoft YaHei', arial;
+}
+#tc_1212_text-003{
+	color: #FFE0D9;
+	font-size: 15px;
+	margin-top: 12px;
+	text-align: center;
+	font-family: 'Microsoft YaHei', arial;
+}
+#tc_1212_qiang{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-top: 36px;
+	margin-left: 116px;
+	background-size:99px 99px;
+	background-image: url(https://gw.alicdn.com/tps/TB1nU1xNFXXXXaRapXXXXXXXXXX-166-166.png);
+}

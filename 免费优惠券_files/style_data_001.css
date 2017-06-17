@@ -1,0 +1,215 @@
+.text_001{
+	width: 1200px;
+	margin: auto;
+}
+.text_div_001{
+	float: left;
+	height: 383px;
+	width: 288px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	-webkit-border-bottom-Right-radius:40px;
+	-moz-border-bottom-Right-radius: 40px;
+	border-bottom-Right-radius:40px;
+	background-image: url(http://alniu.cc/m/img/Icon-001.png);
+	background-repeat: no-repeat;
+	background-position: 221px 313px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+.text_div_001:hover{
+	background-color: #FF4700;
+	border: 1px solid #FF4700;
+	background-image: url(http://img.alicdn.com/tps/i4/TB1wrMVFVXXXXbMaXXX79yKIXXX-65-60.gif);
+	
+}
+.text_div_0011:hover{
+	margin: 5px;
+	float: left;
+	height: 383px;
+	width: 288px;
+	background-color: #FF4700;
+	border: 1px solid #FF4700;
+	-webkit-border-bottom-Right-radius:40px;
+	-moz-border-bottom-Right-radius: 40px;
+	border-bottom-Right-radius:40px;
+	background-image: url(http://img.alicdn.com/tps/i4/TB1wrMVFVXXXXbMaXXX79yKIXXX-65-60.gif);
+	background-repeat: no-repeat;
+	background-position: 221px 313px;
+	
+}
+.text_div_001 p1{
+	color: #666666;
+}
+.text_div_001:hover p1{
+	color: #FFFFFF;
+}
+.text_div_001 p2{
+	color: #FD4600;
+	font-weight:400;
+	letter-spacing:-1px
+}
+.text_div_001:hover p2{
+	color: #FFFFFF;
+}
+.text_div_002{
+	font-size: 24px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 23px;
+}
+.text_div_003{
+	font-size: 38px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 1px;
+}
+.text_div_001 p3{
+	color: #FD4600;
+	font-weight:700;
+	letter-spacing:-1px
+}
+.text_div_001:hover p3{
+	color: #FFFFFF;
+}
+.text_div_004{
+	font-size:13px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 5px;
+}
+.text_div_001 p4{
+	color:#9b9b9b;
+	text-decoration: line-through;
+}
+.text_div_001:hover p4{
+	color: #FFFFFF;
+}
+.text_div_005{
+	display: inline;
+	position:absolute;
+	transition:.0s;
+	height: 37px;
+	width: 53px;
+	overflow: hidden;
+	margin-top: 321px;
+	margin-left: 226px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 16px;
+}
+.text_div_001 p5{
+	color: #611905;
+	font-weight:700;
+}
+
+.text_div_tian{
+	margin: 9px;
+	background-image: url(http://alniu.cc/m/img/tianmao_16x16.png);
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	height: 17px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text_div_tao{
+	margin: 9px;
+	background-image: url(http://alniu.cc/m/img/taobao_16x16.png);
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	height: 17px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text_div_006{
+	display: inline;
+	position:absolute;
+	transition:.0s;
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	margin-top: 2px;
+	margin-left: 246px;
+	font-size: 12px;
+	text-align: center;
+	background-image: url(http://alniu.cc/m/img/Icon-003.png);
+	color: #FFFFFF;
+}
+.page_Up_001{
+	height: 29px;
+	width: 90px;
+	color: #0099FF;
+	background-color: #FFFFFF;
+	-webkit-border-top-left-radius:17px;
+	-moz-border-top-left-radius:17px;
+	border-top-left-radius:17px;
+	-webkit-border-bottom-left-radius:17px;
+	-moz-border-bottom-left-radius:17px;
+	border-bottom-left-radius:17px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	-webkit-box-shadow:-1px -1px 10px #C90D0C;
+	-moz-box-shadow:-1px -1px 10px #C90D0C;
+	box-shadow:1px 2px 2px #CCCCCC;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 6px;
+	margin-right: 1px;
+}
+.page_Up_001:hover{
+	color: #FFFFFF;
+	background-color: #FD4600;
+}
+.page_lower_001{
+	height: 29px;
+	width: 90px;
+	color: #0099FF;
+	background-color: #FFFFFF;
+	-webkit-border-top-right-radius:17px;
+	-moz-border-top-right-radius:17px;
+	border-top-right-radius:17px;
+	-webkit-border-bottom-right-radius:17px;
+	-moz-border-bottom-right-radius:17px;
+	border-bottom-right-radius:17px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	-webkit-box-shadow:-1px -1px 10px #C90D0C;
+	-moz-box-shadow:-1px -1px 10px #C90D0C;
+	box-shadow:1px 2px 2px #CCCCCC;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 6px;
+	margin-left: 1px;
+}
+.page_lower_001:hover{
+	color: #FFFFFF;
+	background-color: #FD4600;
+}
+.page_001{
+	height: 28px;
+	width: 35px;
+	color: #0099FF;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	-webkit-box-shadow:-1px -1px 10px #C90D0C;
+	-moz-box-shadow:-1px -1px 10px #C90D0C;
+	box-shadow:1px 2px 2px #CCCCCC;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 7px;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+.page_001:hover{
+	color: #FFFFFF;
+	background-color: #FD4600;
+}
+.page_Ellipsis{
+	margin-right: 5px;
+	margin-left: 5px;
+}
