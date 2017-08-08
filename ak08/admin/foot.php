@@ -1,0 +1,1 @@
+<div id="footer">Copyright &copy; <span style="color:#FF5200">Woaik</span><span style="color:#0065FF">.Com</span> , Powered by <a href="http://23niu.ga" target="_blank">一聚影院</a></div><?php 
