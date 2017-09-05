@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>jquery侧边栏导航</title>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/mmenu.css" rel="stylesheet" type="text/css">
+		<link href="css/font-face.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div id="page">
+			<!--头部 start-->
+			<header>
+				<div class="l_tbn"><a href="#menu" class="glyphicon glyphicon-th-large"></a></div>
+				标题
+			</header>
+			<!--头部 end-->
+			
+			<!--正文 start-->
+			<div class="content">正文的内容</div>
+			<!--正文 end-->
+			
+			<!--侧边菜单 start-->
+			<nav id="menu">
+				<ul>
+					<li class="Selected"><a href="#">按钮1</a></li>
+					<li><a href="#">按钮2</a></li>
+					<li><a href="#">按钮3</a></li>
+					<li><a href="#">按钮4</a></li>
+					<li><a href="#">按钮5</a></li>
+				</ul>
+			</nav>
+			<!--侧边菜单 end-->
+			
+		</div>
+	</body>
+</html>

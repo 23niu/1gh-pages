@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>jQuery.mmenu - Demo</title>
+		
+		<link rel="stylesheet" href="http://mmenu.frebsite.nl/demo/css/demo.css" />
+		<link rel="stylesheet" href="http://mmenu.frebsite.nl/demo/css/hamburgers.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="http://mmenu.frebsite.nl/mmenu/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="http://mmenu.frebsite.nl/mhead-plugin/mhead/jquery.mhead.css" />
+		
+		<style type="text/css">
+			#menu {
+				background: #eee;
+			}
+
+			.mm-listview > li > a {
+				font-weight: bold;
+				font-size: 16px;
+				transition: padding 0.5s ease;
+			}
+			.mm-listview > li > a:hover {
+				padding-left: 40px;
+			}
+			.mm-listview li:nth-child( 1 ) { background: #ffd; }
+			.mm-listview li:nth-child( 2 ) { background: #dfd; }
+			.mm-listview li:nth-child( 3 ) { background: #dff; }
+			.mm-listview li:nth-child( 4 ) { background: #ddf; }
+			.mm-listview li:nth-child( 5 ) { background: #fdf; }
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			
+			<div class="mh-head Sticky">
+				<span class="mh-btns-left">
+					<a href="#menu" class="fa fa-bars"></a>
+					<!-- <a class="mh-hamburger" href="#menu"></a> -->
+				</span>
+				<span class="mh-text">demo</span>
+			</div>
+			
+			<div class="content">
+				<p><strong>This is a demo.</strong><br />
+					Click the menu icon to open a custom styled menu.</p>
+			</div>
+		</div>
+		
+		<nav id="menu">
+			<ul>
+				<li><a href="http:www.taobao.com">Home</a></li>
+				<li><a href="44.html">Our work</a></li>
+				<li><a href="45.html">About us</a></li>
+				<li><a href="#/">Services</a></li>
+				<li><a href="#/">Contact</a></li>
+				<li><a href="#/">Contact</a></li>
+				<li><a href="#/">Contact</a></li>
+				<li><a href="#/">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="http://mmenu.frebsite.nl/mmenu/jquery.mmenu.all.js"></script>
+		<script src="http://mmenu.frebsite.nl/mhead-plugin/mhead/jquery.mhead.js"></script>
+		<script src="jhttp://mmenu.frebsite.nl/demo/js/playground.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				$("#menu").mmenu({
+		extensions 	: [ "theme-white", "listview-justify", "border-full", "shadow-page" ],
+		navbar 		: false}, { });
+				$(".mh-head.mm-sticky").mhead({
+					scroll: {
+						hide: 200
+					}
+				});
+				$(".mh-head:not(.mm-sticky)").mhead({
+					scroll: false
+				});
+
+				
+
+				$('body').on( 'click',
+					'a[href^="#/"]',
+					function() {
+						alert( "Thank you for clicking, but that's a demo link." );
+						return false;
+					}
+				);
+			});
+		</script>
+	</body>
