@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<form onsubmit="return gowhere1(this)" target="_blank" name="search_form1" method="get" action="http://www.baidu.com/baidu">
+    <table width="100%" height="80" cellspacing="0" cellpadding="0" border="0" style="font-family:宋体">
+        <tbody>
+            <tr>
+                <td>
+                    <table width="144%" height="80" cellspacing="0" cellpadding="0" border="0">
+                        <input type="hidden" value="0" name="myselectvalue">
+                        <input type="hidden" value="utf-8" name="ie">
+                        <input type="hidden" name="tn" value="SE_zzsearchcode_shhzc78w">
+                        <input type="hidden" name="ct">
+                        <input type="hidden" name="lm">
+                        <input type="hidden" name="cl">
+                        <input type="hidden" name="rn">
+                        <tbody>
+                            <tr>
+                                <td width="8%" valign="bottom">
+                                    <div align="center">
+                                        <a href="https://www.baidu.com/"  target="_blank">
+                                            <img border="0" align="bottom" alt="Baidu" src="https://www.baidu.com/img/baidu_jgylogo3.gif">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td width="92%" valign="bottom">
+
+                                    <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=4;" name="myselect">
+                                    <font color="#0000cc">新闻</font>
+
+                                    <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=0;" name="myselect" checked="">
+                                    <span class="f12"><font color="#0000cc">网页</font></span>
+
+                                    <input type="radio" value="1" onclick="javascript:this.form.myselectvalue.value=1;" name="myselect">
+                                    <span class="f12"><font color="#0000cc">音乐</font></span>
+
+                                    <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=6;" name="myselect">
+                                    <font color="#0000cc">贴吧</font>
+
+                                    <input type="radio" value="0" onclick="javascript:this.form.myselectvalue.value=5;" name="myselect">
+                                    <font color="#0000cc">图片</font>
+
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="right">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-top:10px;">
+                                                    <font>
+                                                        <input id="word" type="text" name="word" size="40" onfocus="checkHttps">
+                                                    </font>
+                                                    <input  type="submit" value="百度一下">
+                                                </td>
+                                                <td><br></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="8%"></td>
+                                <td width="92%"></td>
+                            </tr>
+                            <tr><td></td></tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };    
+    function gowhere1 (formname) {
+        var data = BaiduHttps.useHttps();
+        var url;
+        if (formname.myselectvalue.value == "0") {
+            url = data.s == 0 ? "http://www.baidu.com/baidu" : 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            document.search_form1.tn.value = "SE_zzsearchcode_shhzc78w";
+            formname.method = "get";
+        }
+        if (formname.myselectvalue.value == "1") {            
+            document.search_form1.tn.value = "SE_zzsearchcode_shhzc78w";
+            document.search_form1.ct.value = "134217728";
+            document.search_form1.lm.value = "-1";
+            url = "http://mp3.baidu.com/m";
+        }
+        if (formname.myselectvalue.value == "4") {
+            document.search_form1.tn.value = "SE_zzsearchcode_shhzc78w";
+            document.search_form1.cl.value = "2";
+            document.search_form1.rn.value = "20";
+            url = "http://news.baidu.com/ns";
+        }
+        if (formname.myselectvalue.value == "5") {
+            document.search_form1.tn.value = "SE_zzsearchcode_shhzc78w";
+            document.search_form1.ct.value = "201326592";
+            document.search_form1.cl.value = "2";
+            document.search_form1.lm.value = "-1";
+            url = "http://image.baidu.com/i";
+        }
+        if (formname.myselectvalue.value == "6") {            
+            document.search_form1.tn.value = "SE_zzsearchcode_shhzc78w";
+            document.search_form1.ct.value = "352321536";
+            document.search_form1.rn.value = "10";
+            document.search_form1.lm.value = "65536";
+            url = "http://tieba.baidu.com";
+        }
+        formname.action = url;
+        return true;
+    }
+</script>
+
+		
+		
+		
+		
+		<form name="f1" onsubmit="return g(this)" target="_blank">
+    <table bgcolor="#FFFFFF" style="font-size:9pt;">
+        <tr height="60">
+            <td valign="top" width="8%">
+                <a href="https://www.baidu.com/"  target="_blank">
+                    <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" border="0" alt="baidu">
+                </a>
+            </td>
+            <td>
+                <input type="text" name="word" onfocus="checkHttps" size="30" maxlength="100">
+                <input type="submit" value="百度搜索"><br>
+                <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+                <input name="cl" type="hidden" value="3">
+                <input name="ct" type="hidden">
+                <input name="si" type="hidden" value="www.baidu.com">
+                <div class="mt10">
+                    <input name="s" type="radio"> 互联网<input name="s" type="radio" checked> www.baidu.com
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();
+    };
+    function g(formname) {
+        var data = BaiduHttps.useHttps();
+        var url = '';
+        url = data.s == 0 ? "http://www.baidu.com/baidu" : 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+        if (formname.s[1].checked) {
+            formname.ct.value = "2097152";
+        }
+        else {
+            formname.ct.value = "0";
+        }
+        formname.action = url;
+        return true;
+    };
+    
+ 
+    
+  
+    
+    
+</script>
+
+
+
+<form action="http://www.baidu.com/baidu" target="_blank">
+<table bgcolor="#FFFFFF"><tr><td>
+<input name=tn type=hidden value=baidu>
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=word size=30>
+<input type="submit" value="百度搜索">
+</td></tr></table>
+</form>
+
+
+
+		
+		   https://www.baidu.com/s?word=%E4%BD%A0%E6%83%B3%E8%A6%81%E6%90%9C%E7%B4%A2%E7%9A%84%E5%86%85%E5%AE%B9
+		
+		
+		<form action="https://www.baidu.com/s?word=" target="_blank">
+<table bgcolor="#FFFFFF"><tr><td>
+<input name=tn type=hidden value=baidu>
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=word size=30>
+<input type="submit" value="百度+搜索">
+</td></tr></table>
+</form>
+		
+		https://www.zhihu.com/search?q=
+		
+		<form action="https://www.zhihu.com/search?q=" target="_blank">
+<table bgcolor="#FFFFFF"><tr><td>
+<input name=tn type=hidden value=baidu>
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=word size=30>
+<input type="submit" value="知乎搜索">
+</td></tr></table>
+</form>
+		
+		
+		https://s.taobao.com/search?q=
+		
+			<form action="https://s.taobao.com/search?q=" target="_blank">
+<table bgcolor="#FFFFFF"><tr><td>
+<input name=tn type=hidden value=baidu>
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=word size=30>
+<input type="submit" value="淘宝搜索">
+</td></tr></table>
+</form>
+
+
+
+<form action="https://s.taobao.com/search?q=" target="_blank" >
+	
+	<form  action="https://www.zhihu.com/search?q="  target="_blank">
+		
+<table bgcolor="#FFFFFF"><tr><td>
+
+
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=q size=30>
+<input type="submit" value="淘宝+搜索">
+</td></tr></table>
+</form>
+		&pid=mm_118760083_29772699_127326765
+		https://temai.m.taobao.com/search.htm?q=d322&pid=mm_118760083_29772699_127326765
+		<input name=tn type=hidden value=baidu>
+		
+		
+		
+		
+		https://temai.m.taobao.com/search.htm?q=
+		
+		form action="https://temai.m.taobao.com/search.htm?q=" target="_blank" >
+	
+	
+	
+<form action="https://temai.m.taobao.com/search.htm?q=
+" target="_blank" >
+	
+<table bgcolor="#FFFFFF"><tr><td>
+
+<a href="http://www.baidu.com/"><img src="https://gss0.bdstatic.com/70cFsjip0QIZ8tyhnq/img/logo-80px.gif" alt="Baidu" align="bottom" border="0"></a>
+<input type=text name=q size=30>
+<input type="submit" value="淘宝+22搜索">
+</td></tr></table>
+</form>
+
+
+<form action="https://temai.m.taobao.com/search.htm?q=
+" target="_blank1"   action="https://s.taobao.com/search?q=" target="_blank2"  >
+<form action="https://s.taobao.com/search?q=" target="_blank2" >
+	
+<input type=text name=q size=30>
+<input type="submit" value="淘宝+444搜索">
+
+</form>
+
+<form action="https://temai.m.taobao.com/search.htm
+" target="_blank" >
+	
+<input type=text name=q size=30>
+<input type="submit" value="淘宝+4333搜索">
+
+</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
