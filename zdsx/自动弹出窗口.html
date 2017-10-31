@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<script>
-			window.open("http://www.jb51.net")
-		</script>
-		
-	</head>
-	<body http://www.jb51.net','脚本之家','fullscreen');" >
-		
-<b>www.jb51.net</b> 
-	</body>
+	<head runat="server">
+    <title></title>
+</head>
+<script type="text/javascript" language="javascript">
+    function doAction() {
+
+        document.getElementById("form1").action = " http://pay.beijing.com.cn/prs/user_payment.checkit";
+    }
+
+</script>
+<body onload="doAction();">
+   <form id="form1" runat="server">
+   <input id="hidden1" type="hidden" name="v_id" value="<%=v_id%>"/>
+       <input id="Submit1" type="submit" runat="server" value="submit"/>
+   </form>
+   
+   $(function{
+
+  $("form").submit();
+ });
+   
+</body>
 </html>

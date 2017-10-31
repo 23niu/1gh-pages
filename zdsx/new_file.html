@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="Generator" content="EditPlus®">
+ <meta name="Author" content="">
+ <meta name="Keywords" content="">
+ <meta name="Description" content="">
+ <title>Document</title>
+</head>
+<body bgcolor="#ccc" onload="printer();">
+  <h2 align="center">文本自动输出</h2>
+  <br>
+  <br>
+  <hr width="400" color="black">
+  <br>
+ <form align="center">
+  <textarea cols="50" rows="30" id="text" style="background-color:#FF99CC; color: #330033; cursor: default; font-family: Arial; font-size: 18px" wrap=virtual></textarea>
+ </form>
+</body>
+<script type="text/javascript">
+ 
+  //获取textarea对象
+  var text=document.getElementById("text");
+  //要输出的内容
+  var str="  传统的HTML语言不能开发交互式的动态网页，而JavaScript却能很好的做到这一点。JavaScript是一门相当简单易学的网络化编程语言，通过把她和HTML语言相互结合起来，能够实现实时的动态网页特效，这给网页浏览者在浏览网页的同时也提供了某些乐趣。";
+  var pos=0;
+  //利用递归和setTimeout()实现文字输出
+  function printer(){
+    text.value=str.substring(0,pos)+"|";
+    //判断是否到达结尾.如果是则一秒后再来一遍.
+    if(pos++>str.length){
+      pos=0;
+      setTimeout("printer()",1000);
+    }else{
+      setTimeout("printer()",50);
+    }
+  }
+</script>
+</html>
